@@ -1,0 +1,99 @@
+/* Adicione isso ao form.component.css */
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Mantenha o seu código do form abaixo */
+form {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  /* Remova margens automáticas se houver */
+  margin: 0; 
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5; /* fundo suave */
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente */
+}
+
+/* Container do formulário */
+form {
+  background-color: #ffffff; /* branco limpo */
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* Labels */
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inputs */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Foco no input */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+  border-color: #0660ac;
+  box-shadow: 0 0 5px rgba(6, 96, 172, 0.5);
+  outline: none;
+}
+
+/* Botão */
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0660ac;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background-color: #034a7c;
+  transform: translateY(-2px);
+}
+
+/* Pequeno texto ou mensagem abaixo do botão */
+form p {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin-top: 15px;
+}
